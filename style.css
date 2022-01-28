@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+.bi {
+    color: #012970;
+}
+
 
 .header {
     height: 60px;
@@ -9,10 +16,30 @@
     width: 280px;
 }
 
-img {
-    width: 20px;
+.brand:hover {
+    text-decoration: none;
 }
 
+.media-account .media-body-account .p-2:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 24.5px;
+    height: 26px;
+}
+
+.navbar-brand {
+    font-size: 26px;
+    font-weight: 700;
+    color: #012970;
+    font-family: 'Nunito', sans-serif;
+    margin-left: 6px;
+}
+
+.header .d-flex .list {
+    font-size: 32px;
+}
 
 /* search-bar */
 .searchBar {
@@ -22,7 +49,7 @@ img {
 .border-search  {
     margin: auto;
     position: relative;
-    border: 2px solid #C2C9D6;
+    border: 1px solid #C2C9D6;
     border-radius: 5px;
     padding: 5px;
     width: 320px;
@@ -34,7 +61,6 @@ input[type="text"] {
 button[type="submit"] {
     background: white;
     border: none;
-    color: #37578E;
 }
 
 .search {
@@ -47,4 +73,69 @@ button[type="submit"] {
 input[type="text"]:focus,
 button[type="submit"]:focus {
     outline: none;
+}
+
+.icon-button {
+    width: 52px;
+}
+
+.badge-bell{
+    position: absolute;
+    inset: 12px 233px auto auto;
+    font-weight: normal;
+    font-size: 11px;
+    padding: 3px 6px;
+    border-radius: 5px;
+    width: 18.3px;
+    height: 17px;
+}
+
+.badge-contification{
+    position: absolute;
+    inset: 12px 182px auto auto;
+    font-weight: normal;
+    font-size: 11px;
+    padding: 3px 6px;
+    border-radius: 5px;
+    width: 18.3px;
+    height: 17px;
+}
+
+.bell, .chat {
+    font-size: 20px;
+}
+
+.media-account {
+    width: 158.53px;
+}
+
+.media-account img {
+    width: 36px;
+    height: 36px;
+}
+
+.media-body-account span{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    color: #012970;
+}
+
+.media-body-account .bi {
+    font-size: 9px;
+}
+
+.wrapper {
+    width: 290px;
+    height: 361px;
+    background: lightblue;
+    font-family: 'Open Sans', sans-serif;
+    color: #012970;
+}
+.wrapper .sidebar {
+    padding: 20px;
+}
+
+.active a {
+    color: #012970;
 }
