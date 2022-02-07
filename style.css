@@ -5,6 +5,9 @@
     color: #012970;
 }
 
+body {
+    font-family: "Open Sans", sans-serif;
+}
 
 .header {
     height: 60px;
@@ -126,16 +129,76 @@ button[type="submit"]:focus {
 }
 
 .wrapper {
-    width: 290px;
-    height: 361px;
-    background: lightblue;
-    font-family: 'Open Sans', sans-serif;
-    color: #012970;
-}
-.wrapper .sidebar {
+    width: 300px;
     padding: 20px;
 }
 
-.active a {
-    color: #012970;
+.active {
+    width: 255px;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
 }
+
+.item {
+    display: flex;
+    align-items: center;
+}
+ 
+.item span {
+    color: #012970;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.active:hover {
+    background-color: #f6f9ff;
+    border-radius: 4px;
+}
+
+.active:hover span,
+.active:hover i {
+    color: #4154f1;
+}
+
+.item:hover {
+    text-decoration: none;
+    color: #4154f1;
+}
+
+
+#first-active {
+    background-color: #f6f9ff;
+    border-radius: 4px;
+    color: #4154f1;
+}
+
+#first-active .bi-item {
+    font-size: 16px; 
+    color: #4154f1;   
+}
+
+#first-active span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.first-item {
+    color: #4154f1;
+    align-items: center;
+}
+
+.active .bi-item {
+    margin-right: 10px;
+    color: #899bbd;
+}
+
+.active .bi-down {
+    color: #899bbd;
+}
+
+.text {
+    font-size: 11px;
+    margin: 10px 0px 5px 15px;
+}
+
