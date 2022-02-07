@@ -10,9 +10,11 @@ body {
 }
 
 .header {
-    height: 60px;
     padding-left: 20px;
-    box-shadow: 0px 2px 20px  #e9e4e4;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+    height: 60px;
+    position: relative;
+    z-index: 997;
 }
 
 .brand {
@@ -42,6 +44,7 @@ img {
 
 .header .d-flex .list {
     font-size: 32px;
+    cursor: pointer;
 }
 
 /* search-bar */
@@ -131,6 +134,7 @@ button[type="submit"]:focus {
 .wrapper {
     width: 300px;
     padding: 20px;
+    background-color: #ffffff;
 }
 
 .active {
@@ -166,6 +170,9 @@ button[type="submit"]:focus {
     color: #4154f1;
 }
 
+.first-item:hover {
+    text-decoration: none;
+}
 
 #first-active {
     background-color: #f6f9ff;
@@ -202,3 +209,12 @@ button[type="submit"]:focus {
     margin: 10px 0px 5px 15px;
 }
 
+.main-body-breadcrumb {
+    position: absolute;
+    width: 77.78%;
+    margin-left: 300px;
+    top: 60px;
+    padding: 20px 30px;
+    height: 100%;
+    background-color: #f6f9ff;
+}
