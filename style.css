@@ -45,6 +45,7 @@ img {
 .header .d-flex .list {
     font-size: 32px;
     cursor: pointer;
+    margin-left: 5px;
 }
 
 /* search-bar */
@@ -131,10 +132,17 @@ button[type="submit"]:focus {
     font-size: 9px;
 }
 
-.wrapper {
+.list-unstyled {
+    height: 100%;
     width: 300px;
     padding: 20px;
     background-color: #ffffff;
+    position: absolute;
+    left: -300px;
+}
+
+.wrapper .sidebar-show {
+    left: 0;
 }
 
 .active {
@@ -167,7 +175,6 @@ button[type="submit"]:focus {
 
 .item:hover {
     text-decoration: none;
-    color: #4154f1;
 }
 
 .first-item:hover {
@@ -209,12 +216,10 @@ button[type="submit"]:focus {
     margin: 10px 0px 5px 15px;
 }
 
-.main-body-breadcrumb {
-    position: absolute;
-    width: 77.78%;
+.main-body {
+    width: 100%;
+}
+.main-body.sidebar-show {
     margin-left: 300px;
-    top: 60px;
-    padding: 20px 30px;
-    height: 100%;
-    background-color: #f6f9ff;
+    width: calc(100% - 300px);
 }

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.bi-list').click(function(){
-       $('.wrapper').addClass('sidebar-show'); 
+    $('.toggle-btn').click(function(){
+        $('.list-unstyled , .main-body').toggleClass('sidebar-show');
     });
 });
