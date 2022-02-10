@@ -152,14 +152,14 @@ button[type="submit"]:focus {
     padding: 20px;
     background-color: #fff;
     position: absolute;
+    left: 0;
     box-shadow: 4px 0px 9px -1px rgba(1,41,112,0.1);
-    transition: 10s all ease 0s;
+    transition: 0.4s all ease 0s;
 }
 
-.wrapper .list-unstyled.sidebar-show {
+.wrapper .sidebar-show {
     left: -300px;
     height: 100vh;
-    transition: 10s all ease 0s;
 }
 
 .wrapper .list-unstyled::-webkit-scrollbar {
