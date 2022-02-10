@@ -1,12 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+}
+
 .bi {
     color: #012970;
 }
 
 body {
     font-family: "Open Sans", sans-serif;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    padding: 0;
 }
 
 .header {
@@ -14,7 +28,8 @@ body {
     box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
     height: 60px;
     position: relative;
-    z-index: 997;
+    background-color: #FFF;
+    z-index: 1;
 }
 
 .brand {
@@ -50,7 +65,7 @@ img {
 
 /* search-bar */
 .searchBar {
-    width: 360px;    
+    width: 360px;
 }
 
 .border-search  {
@@ -73,7 +88,6 @@ button[type="submit"] {
 .search {
     border: none;
     padding: 0px 0px;
-    
     color: #424242;
     width: 272px;
 }
@@ -132,17 +146,33 @@ button[type="submit"]:focus {
     font-size: 9px;
 }
 
-.list-unstyled {
-    height: 100%;
+.wrapper .list-unstyled {
+    height: 100vh;
     width: 300px;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #fff;
     position: absolute;
-    left: -300px;
+    box-shadow: 4px 0px 9px -1px rgba(1,41,112,0.1);
+    transition: 10s all ease 0s;
 }
 
-.wrapper .sidebar-show {
-    left: 0;
+.wrapper .list-unstyled.sidebar-show {
+    left: -300px;
+    height: 100vh;
+    transition: 10s all ease 0s;
+}
+
+.wrapper .list-unstyled::-webkit-scrollbar {
+    width: 5px;
+    height: 50px;
+}
+
+.wrapper .list-unstyled::-webkit-scrollbar-thumb {
+    background: #aab7cf; 
+}
+
+.wrapper .list-unstyled::-webkit-scrollbar-track {
+    background: #fff; 
 }
 
 .active {
@@ -217,9 +247,15 @@ button[type="submit"]:focus {
 }
 
 .main-body {
-    width: 100%;
+    margin-left: 300px;
+    padding: 20px 30px;
+    background: #F6F9FF;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: calc(100% - 300px);
+    transition: 0.4s all ease 0s;
 }
 .main-body.sidebar-show {
-    margin-left: 300px;
-    width: calc(100% - 300px);
+    margin-left: 0;
+    width: 100%;
 }
