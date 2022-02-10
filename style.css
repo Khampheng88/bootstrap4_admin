@@ -9,7 +9,6 @@
 
 html {
     height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
 }
 
 .bi {
@@ -19,7 +18,6 @@ html {
 body {
     font-family: "Open Sans", sans-serif;
     height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     padding: 0;
 }
 
@@ -40,7 +38,7 @@ body {
     text-decoration: none;
 }
 
-.media-account .media-body-account .p-2:hover {
+.media-account .media-body-account:hover {
     text-decoration: none;
 }
 
@@ -111,7 +109,7 @@ button[type="submit"]:focus {
     height: 17px;
 }
 
-.badge-contification{
+.badge-contification {
     position: absolute;
     inset: 12px 182px auto auto;
     font-weight: normal;
@@ -146,49 +144,17 @@ button[type="submit"]:focus {
     font-size: 9px;
 }
 
-<<<<<<< HEAD
-/* .sidebar-wrap .list-unstyled {
-    height: 100vh;
-    width: 300px;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    box-shadow: rgba(1, 41, 112, 0.1) 4px 0px 9px -1px;
-    padding: 20px;
-}
-
-.sidebar-wrap.sidebar-show {
-    left: -300px;
-    height: 100vh;
-}
-
-.list-unstyled::-webkit-scrollbar {
-    width: 5px;
-    height: 50px;
-}
-
-.list-unstyled::-webkit-scrollbar-thumb {
-    background: #aab7cf; 
-}
-
-.list-unstyled::-webkit-scrollbar-track {
-    background: #fff; 
-} */
-
 .sidebar-wrap .list-unstyled {
-=======
-.wrapper .list-unstyled {
-    height: 100vh;
->>>>>>> 59accfe44f49553a686410cb26d3f0c9299cf5a9
     width: 300px;
     height: 100vh;
     padding: 20px;
-<<<<<<< HEAD
     position: absolute;
     left: 0px;
     transition: 0.4s all ease 0s;
     background-color: #fff;
     overflow: scroll;
     list-style-type: none;
+    box-shadow: 0px 0px 20px 2px rgba(1,41,112,0.1);
 }
 
 .sidebar-wrap .sidebar-show {
@@ -196,38 +162,15 @@ button[type="submit"]:focus {
 }
 
 .sidebar-wrap .list-unstyled::-webkit-scrollbar {
-=======
-    background-color: #fff;
-    position: absolute;
-    left: 0;
-    box-shadow: 4px 0px 9px -1px rgba(1,41,112,0.1);
-    transition: 0.4s all ease 0s;
-}
-
-.wrapper .sidebar-show {
-    left: -300px;
-    height: 100vh;
-}
-
-.wrapper .list-unstyled::-webkit-scrollbar {
->>>>>>> 59accfe44f49553a686410cb26d3f0c9299cf5a9
     width: 5px;
     height: 50px;
 }
 
-<<<<<<< HEAD
 .sidebar-wrap .list-unstyled::-webkit-scrollbar-thumb {
     background: #aab7cf; 
 }
 
 .sidebar-wrap .list-unstyled::-webkit-scrollbar-track {
-=======
-.wrapper .list-unstyled::-webkit-scrollbar-thumb {
-    background: #aab7cf; 
-}
-
-.wrapper .list-unstyled::-webkit-scrollbar-track {
->>>>>>> 59accfe44f49553a686410cb26d3f0c9299cf5a9
     background: #fff; 
 }
 
@@ -314,8 +257,4 @@ button[type="submit"]:focus {
 .main-body.sidebar-show {
     margin-left: 0;
     width: 100%;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 59accfe44f49553a686410cb26d3f0c9299cf5a9
