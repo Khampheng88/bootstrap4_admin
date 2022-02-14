@@ -425,7 +425,7 @@ button[type="submit"]:focus {
 }
 
 .col-xl-12 .card.d-block {
-    overflow-y: scroll;
+    overflow: auto;
 }
 /*  DataTable table-recent  */
 table#table-recent thead th {
