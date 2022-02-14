@@ -424,7 +424,7 @@ button[type="submit"]:focus {
     margin-bottom: 30px;
 }
 
-.col-xl-12 .card.d-block {
+.table-body {
     overflow: auto;
 }
 /*  DataTable table-recent  */
